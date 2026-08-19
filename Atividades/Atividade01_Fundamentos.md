@@ -90,7 +90,7 @@ Saldo restante: 8.00
 
 Calcular também o **percentual do cartão já utilizado** e avisar se o saldo ficou negativo (ainda sem `if` composto elaborado: pode usar apenas expressão e mensagem fixa, ou um `if` simples se a turma já tiver visto).
 
----
+----
 
 ## Dica de estudo
 
