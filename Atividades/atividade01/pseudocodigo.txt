@@ -1,0 +1,41 @@
+INICIO
+    // Definição de constantes
+    DEFINIR PRECO_REFEICAO = 12.50
+    DEFINIR PRECO_CAFE = 4.00
+
+    // Declaração de variáveis
+    INTEIRO qtd_refeicoes, qtd_cafes
+    REAL valor_disponivel, gasto_refeicoes, gasto_cafes, gasto_total, saldo_restante, percentual_usado
+
+    // Entrada de dados
+    ESCREVA "Quantidade de refeicoes: "
+    LEIA qtd_refeicoes
+
+    ESCREVA "Quantidade de cafes: "
+    LEIA qtd_cafes
+
+    ESCREVA "Valor disponivel no cartao: "
+    LEIA valor_disponivel
+
+    // Processamento
+    gasto_refeicoes = qtd_refeicoes * PRECO_REFEICAO
+    gasto_cafes = qtd_cafes * PRECO_CAFE
+    gasto_total = gasto_refeicoes + gasto_cafes
+    saldo_restante = valor_disponivel - gasto_total
+
+    // Saída de dados
+    ESCREVA "Gasto refeicoes: ", gasto_refeicoes
+    ESCREVA "Gasto cafes: ", gasto_cafes
+    ESCREVA "Gasto total: ", gasto_total
+    ESCREVA "Saldo restante: ", saldo_restante
+
+    // Desafio opcional
+    SE valor_disponivel > 0 ENTAO
+        percentual_usado = (gasto_total / valor_disponivel) * 100
+        ESCREVA "Percentual do cartao utilizado: ", percentual_usado, "%"
+    FIM_SE
+
+    SE saldo_restante < 0 ENTAO
+        ESCREVA "[AVISO] Saldo insuficiente! Voce ultrapassou o limite do cartao."
+    FIM_SE
+FIM
