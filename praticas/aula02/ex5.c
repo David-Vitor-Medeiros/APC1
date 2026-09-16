@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-   int idade 19
+   int idade = 10;
     
    
     

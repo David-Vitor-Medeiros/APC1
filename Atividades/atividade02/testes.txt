@@ -1,0 +1,59 @@
+TESTES recibo_compra.c
+Compilação: gcc -std=c99 -Wall -o recibo_compra recibo_compra.c
+
+========================================
+CENARIO 1 - fluxo normal, nome e produto com espacos
+========================================
+Entradas digitadas:
+  Nome completo do cliente: Maria
+  Codigo do produto: 1042
+  Nome do produto: Caderno Universitario
+  Quantidade: 3
+  Preco unitario: 15.90
+  Categoria: A
+
+Saida do programa:
+========================================
+           RECIBO DE COMPRA
+========================================
+Cliente   : Maria
+Produto   : Caderno Universitario
+Codigo    : 1042
+Categoria : A
+Qtd       : 3
+Unitario  : R$ 15.90
+Total     : R$ 47.70
+========================================
+
+Observacao: o nome "Maria Silva Souza" e o produto "Caderno Universitario"
+foram lidos completos (com espacos) porque usei fgets, o que nao
+aconteceria com scanf("%s").
+
+
+========================================
+CENARIO 2 - validacao de quantidade invalida (<=0) e categoria B
+========================================
+Entradas digitadas:
+  Nome completo do cliente: Joao Pedro
+  Codigo do produto: 2087
+  Nome do produto: Mouse
+  Quantidade: -1        (invalida)
+  Quantidade: 0         (invalida)
+  Quantidade: 5         (valida, sai do laco)
+  Preco unitario: 89.50
+  Categoria: B
+
+Saida do programa:
+Quantidade invalida! Digite um valor maior que zero.
+Quantidade invalida! Digite um valor maior que zero.
+========================================
+           RECIBO DE COMPRA
+========================================
+Cliente   : Joao Pedro
+Produto   : Mouse
+Codigo    : 2087
+Categoria : B
+Qtd       : 5
+Unitario  : R$ 89.50
+Total     : R$ 447.50
+========================================
