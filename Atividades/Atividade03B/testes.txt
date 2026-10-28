@@ -1,0 +1,68 @@
+======================================================================
+CENÁRIO DE TESTE 1: Serviço 2, Prioridade N, Dia 4
+Entrada:
+Serviço    : 2
+Prioridade : N
+Dia        : 4
+
+Saída esperada:
+===========================================
+TRIAGEM DE PROTOCOLO ACADEMICO
+Servico            : Declaracao de matricula
+Categoria          : Documento simples
+Prazo              : 2 dias uteis
+Taxa base          : R$ 15.00
+Prioridade         : Normal
+Guiche             : 2
+Acrescimo          : R$ 0.00
+Dia                : Quarta-feira
+Expediente         : Pleno
+Taxa final         : R$ 15.00
+Status do servico  : ACEITO
+===========================================
+
+======================================================================
+CENÁRIO DE TESTE 2: Serviço 6, Prioridade u, Dia 6
+Entrada:
+Serviço    : 6
+Prioridade : u
+Dia        : 6
+
+Saída esperada:
+===========================================
+TRIAGEM DE PROTOCOLO ACADEMICO
+Servico            : Colacao de grau
+Categoria          : Ato solene
+Prazo              : 15 dias uteis
+Taxa base          : R$ 80.00
+Prioridade         : Urgente
+Guiche             : 1
+Acrescimo          : R$ 10.00
+Dia                : Sexta-feira
+Expediente         : Reduzido
+Taxa final         : R$ 90.00
+Status do servico  : ACEITO
+===========================================
+
+======================================================================
+CENÁRIO DE TESTE 3: Serviço 9, Prioridade X, Dia 0 (Inválidos)
+Entrada:
+Serviço    : 9
+Prioridade : X
+Dia        : 0
+
+Saída esperada:
+===========================================
+TRIAGEM DE PROTOCOLO ACADEMICO
+Servico            : Codigo invalido
+Categoria          : N/A
+Prazo              : 0 dias uteis
+Taxa base          : R$ 0.00
+Prioridade         : Invalida
+Guiche             : 0
+Acrescimo          : R$ 0.00
+Dia                : Dia invalido
+Expediente         : Dia invalido
+Taxa final         : R$ 0.00
+Status do servico  : RECUSADO
+===========================================
