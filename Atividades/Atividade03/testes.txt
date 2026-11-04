@@ -1,0 +1,29 @@
+CENÁRIO 1: Aluno Faixa A com nota regular e pontualidade positiva
+Entradas:
+- Nome completo: João Pedro Coelho Lima
+- Idade: 18
+- Renda familiar: 1950.00
+- Média acadêmica: 5.00
+- Pontualidade: S
+Saída Esperada:
+Faixa Social: Faixa A | Desconto Base: 30.0% | Bônus Pontual: 5.0% | Desconto Total: 35.0% | Status: APROVADO PARA BOLSA
+
+CENÁRIO 2: Aluno Faixa B com nota intermediária e sem pontualidade
+Entradas:
+- Nome completo: Jorge Daniel Matos
+- Idade: 22
+- Renda familiar: 2700.00
+- Média acadêmica: 7.00
+- Pontualidade: N
+Saída Esperada:
+Faixa Social: Faixa B | Desconto Base: 10.0% | Bônus Pontual: 0.0% | Desconto Total: 10.0% | Status: APROVADO PARA BOLSA
+
+CENÁRIO 3: Validação de dados inválidos (Idade inferior ao limite mínimo)
+Entradas:
+- Nome completo: Caio Rocha de Souza
+- Idade: 15
+- Renda familiar: 1200.00
+- Média acadêmica: 9.00
+- Pontualidade: S
+Saída Esperada:
+"Erro: Idade invalida ou renda nula/negativa. Analise encerrada." (Encerramento prematuro sem cálculo)
