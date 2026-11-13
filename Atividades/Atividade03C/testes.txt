@@ -1,0 +1,14 @@
+Cenario 1 - Opcao 1 (Lote):
+Sequencia: 4, -2, 7, 8, 0 -> Atendidas: 3, Ignoradas: 1, Pares: 2.
+Primeira senha 0 -> Atendidas: 0, Ignoradas: 0, Pares: 0.
+
+Cenario 2 - Opcao 2 (Chamadas):
+Inicio: 2, Fim: 10, Passo: 2 -> 2 4 6 8 10
+Inicio: 10, Fim: 1, Passo: -3 -> 10 7 4 1
+Passo: 0 -> Passo invalido
+
+Cenario 3 - Opcao 3 (Grade):
+Guiches: 2, Senhas por guiche: 3 -> Guiche 1: 123 / Guiche 2: 123
+
+Cenario 4 - Opcao 4 (Busca Prioritaria):
+Senhas: 4, 7, 20 -> Prioritaria: 20, Lidas antes: 2
