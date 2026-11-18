@@ -1,0 +1,65 @@
+==================================================
+REGISTRO DE TESTES - ATIVIDADE 04C
+==================================================
+
+[TESTE 1 - Opção 1: Cadastro de Alunos]
+Opcao: 1
+Digite o nome do aluno 1: Carlos Eduardo
+Digite o nome do aluno 2: Ana Beatriz
+Digite o nome do aluno 3: Lucas Gabriel
+Digite o nome do aluno 4: Mariana Souza
+Digite o nome do aluno 5: Pedro Henrique
+
+Lista de Alunos Cadastrados:
+1. Carlos Eduardo
+2. Ana Beatriz
+3. Lucas Gabriel
+4. Mariana Souza
+5. Pedro Henrique
+
+[TESTE 2 - Opção 2: Estatísticas de Desempenho]
+Opcao: 2
+Digite a nota final do aluno 1 (0 a 10): 7.5
+Digite a nota final do aluno 2 (0 a 10): 8.0
+Digite a nota final do aluno 3 (0 a 10): 6.0
+Digite a nota final do aluno 4 (0 a 10): 9.0
+Digite a nota final do aluno 5 (0 a 10): 8.5
+
+Média geral da turma: 7.80
+Quantidade de alunos com nota maior ou igual à média: 3
+
+[TESTE 3 - Opção 3: Matriz de Notas da Turma]
+Opcao: 3
+--- Aluno 1 ---
+  Digite a nota do Bimestre 1: 7.0
+  Digite a nota do Bimestre 2: 8.0
+  Digite a nota do Bimestre 3: 7.5
+  Digite a nota do Bimestre 4: 8.5
+--- Aluno 2 ---
+  Digite a nota do Bimestre 1: 6.0
+  Digite a nota do Bimestre 2: 6.5
+  Digite a nota do Bimestre 3: 7.0
+  Digite a nota do Bimestre 4: 8.0
+--- Aluno 3 ---
+  Digite a nota do Bimestre 1: 9.0
+  Digite a nota do Bimestre 2: 8.5
+  Digite a nota do Bimestre 3: 9.5
+  Digite a nota do Bimestre 4: 9.0
+
+Boletim da Turma:
+----------------------------------------------------
+Aluno     | Bim 1 | Bim 2 | Bim 3 | Bim 4 | Média Simples
+----------------------------------------------------
+Aluno 1   |   7.0 |   8.0 |   7.5 |   8.5 |    7.75
+Aluno 2   |   6.0 |   6.5 |   7.0 |   8.0 |    6.88
+Aluno 3   |   9.0 |   8.5 |   9.5 |   9.0 |    9.00
+----------------------------------------------------
+
+[TESTE 4 - Opção 4: Consultar Aluno em Destaque]
+Opcao: 4
+A maior nota da turma é 9.00
+Encontrada no índice 3 (correspondente ao Aluno 4).
+
+[TESTE 5 - Opção 0: Encerramento]
+Opcao: 0
+Encerrando o Sistema de Gestão Acadêmica. Até logo!
