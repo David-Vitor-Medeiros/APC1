@@ -1,0 +1,51 @@
+==================================================
+CASOS DE TESTE - MINI CADASTRO DE TURMAS
+==================================================
+
+1. CADASTRO DE ALUNOS (Opção 1)
+--------------------------------------------------
+Aluno 1 (Caso Aprovado: média >= 5.0)
+- Matrícula: 101
+- Nome: Ana Silva
+- Nota A1: 6.0
+- Nota A2: 7.0
+-> Cálculo esperado: (0.4 * 6.0) + (0.6 * 7.0) = 2.4 + 4.2 = 6.60 (APROVADO)
+
+Aluno 2 (Caso Recuperação: 3.0 <= média < 5.0)
+- Matrícula: 102
+- Nome: Bruno Costa
+- Nota A1: 4.0
+- Nota A2: 4.0
+-> Cálculo esperado: (0.4 * 4.0) + (0.6 * 4.0) = 1.6 + 2.4 = 4.00 (RECUPERACAO)
+
+Aluno 3 (Caso Reprovado: média < 3.0)
+- Matrícula: 103
+- Nome: Carlos Souza
+- Nota A1: 2.0
+- Nota A2: 2.5
+-> Cálculo esperado: (0.4 * 2.0) + (0.6 * 2.5) = 0.8 + 1.5 = 2.30 (REPROVADO)
+
+--------------------------------------------------
+2. LISTAGEM (Opção 2)
+--------------------------------------------------
+Deve exibir os 3 alunos formatados em colunas com matrícula, nome, A1, A2, média e status.
+
+--------------------------------------------------
+3. BUSCA POR MATRÍCULA (Opção 3)
+--------------------------------------------------
+- Entrada: 102 -> Exibe os dados de Bruno Costa.
+- Entrada: 999 -> Exibe "nao encontrado".
+
+--------------------------------------------------
+4. BUSCA POR TRECHO DO NOME (Opção 4)
+--------------------------------------------------
+- Entrada: "Silva" -> Lista Ana Silva.
+- Entrada: "os" -> Lista Bruno Costa e Carlos Souza.
+
+--------------------------------------------------
+5. ESTATÍSTICAS (Opção 5)
+--------------------------------------------------
+- Aprovados: 1
+- Recuperação: 1
+- Reprovados: 1
+- Média geral: (6.60 + 4.00 + 2.30) / 3 = 4.30
